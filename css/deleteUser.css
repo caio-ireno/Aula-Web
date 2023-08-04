@@ -1,0 +1,52 @@
+#userList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espaçamento entre as colunas */
+}
+
+.userItem {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+.userItem p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.userItem p span {
+  font-weight: bold;
+}
+
+.cardUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f72585;
+  padding: 25px;
+  border-radius: 7px;
+}
+
+.cardUser h1 {
+  margin: 0px 0px 20px 0px;
+  color: white;
+}
+
+.deleteButton {
+  background-color: #f72585;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: #ff0676;
+}

@@ -1,46 +1,16 @@
 {
   "users": [
     {
-      "id": 1,
-      "email": "usuario1@teste.com",
-      "name": "Usuário 1",
-      "password": "senha1"
-    },
-    {
-      "id": 2,
-      "email": "usuario2@teste.com",
-      "name": "Usuário 2",
-      "password": "senha2"
-    },
-    {
       "email": "caio_ireno@hotmail.com",
       "name": "caio",
-      "password": "asd",
+      "password": "123",
       "id": 3
     },
     {
-      "email": "caio_ireno@hotmail.com",
-      "name": "caio",
-      "password": "asd",
+      "email": "caio@gmail.com",
+      "name": "ireno",
+      "password": "1523",
       "id": 4
-    },
-    {
-      "email": "caio_ireno@hotmail.com",
-      "name": "asd",
-      "password": "asd",
-      "id": 5
-    },
-    {
-      "email": "nath.oliveiranogueira@hotmail.com",
-      "name": "asd",
-      "password": "asd",
-      "id": 6
-    },
-    {
-      "email": "natholivanog@gmail.com",
-      "name": "asd",
-      "password": "asd",
-      "id": 7
     }
   ]
 }
