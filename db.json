@@ -3,14 +3,17 @@
     {
       "email": "caio_ireno@hotmail.com",
       "name": "caio",
-      "password": "123",
       "id": 3
     },
     {
-      "email": "caio@gmail.com",
-      "name": "ireno",
-      "password": "1523",
+      "email": "nath.oliveiranogueira@hotmail.com",
+      "name": "nathalia",
       "id": 4
+    },
+    {
+      "email": "gustavo.henri@hotmail.com",
+      "name": "guga",
+      "id": 5
     }
   ]
 }

@@ -29,26 +29,5 @@ async function getUsers() {
   }
 }
 
-// Função para deletar um usuário pelo ID
-async function deleteUser(userId) {
-  try {
-    const response = await fetch(`http://localhost:3000/users/${userId}`, {
-      method: "DELETE",
-    });
-
-    if (response.ok) {
-      // Se a resposta for bem-sucedida, remove o usuário da lista
-      const listItem = document.querySelector(`li[data-id="${userId}"]`);
-      if (listItem) {
-        listItem.remove();
-      }
-    } else {
-      console.error("Erro ao deletar usuário:", response.status);
-    }
-  } catch (error) {
-    console.error("Erro ao deletar usuário:", error);
-  }
-}
-
 // Chama a função para buscar e exibir os usuários ao carregar a página
 getUsers();

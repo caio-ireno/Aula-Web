@@ -31,10 +31,10 @@ async function updateUser(id, user) {
     body: JSON.stringify(user),
   });
   const data = await response.json();
+  console.log(data);
   return data;
 }
 
-// Função para realizar uma requisição DELETE para a API
 async function deleteUser(id) {
   const response = await fetch(`${BASE_URL}/users/${id}`, {
     method: "DELETE",
