@@ -16,9 +16,12 @@ async function UpdateUserById() {
       const SendButton = document.createElement("button");
       SendButton.textContent = "Atualizar";
       SendButton.classList.add("updateButton");
-      SendButton.addEventListener("click", () =>
-        openUpdateForm(user.id, user.email, user.name, user.password)
-      );
+      SendButton.addEventListener("click", () => {
+        const modal = document.getElementById("demo-modal"); // Access the first element with the "modal" class
+        modal.style.visibility = "visible"; // Set the "visibility" style property to "visible"
+        modal.style.opacity = "1"; // Set the "opacity" style property to "1"
+        openUpdateForm(user.id, user.email, user.name, user.password);
+      });
 
       listItem.appendChild(userText);
       listItem.appendChild(SendButton);
