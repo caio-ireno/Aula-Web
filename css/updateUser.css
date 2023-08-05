@@ -1,6 +1,6 @@
 @import "./userList.css";
 
-.deleteButton {
+.updateButton {
   background-color: #f72585;
   color: #fff;
   font-size: 14px;
@@ -12,12 +12,12 @@
   margin-top: 10px;
 }
 
-.deleteButton:hover {
+.updateButton:hover {
   background-color: #ff0676;
 }
 
 @media (max-width: 900px) {
-  .deleteButton {
+  .updateButton {
     font-size: 0.8rem;
   }
 }

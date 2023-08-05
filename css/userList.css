@@ -22,13 +22,6 @@
   font-weight: bold;
 }
 
-.message {
-  margin-top: 10px;
-  text-align: center;
-  color: #007bff;
-  font-size: 14px;
-}
-
 .cardUser {
   display: flex;
   flex-direction: column;
@@ -36,9 +29,32 @@
   background-color: #f72585;
   padding: 25px;
   border-radius: 7px;
+  margin-bottom: 20px;
 }
 
 .cardUser h1 {
   margin: 0px 0px 20px 0px;
   color: white;
+}
+
+@media (max-width: 900px) {
+  #userList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #userList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardUser h1 {
+    font-size: 1.3rem;
+  }
+  .cardUser {
+    padding: 15px;
+  }
+
+  .userItem p {
+    font-size: 1rem;
+  }
 }

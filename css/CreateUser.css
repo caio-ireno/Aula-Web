@@ -1,4 +1,4 @@
-.formLogin {
+.formCreate {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -8,25 +8,23 @@
   gap: 5px;
 }
 
-.areaLogin img {
-  width: 420px;
-}
-
-.formLogin h1 {
+.formCreate h1 {
   padding: 0;
   margin: 0;
   font-weight: 500;
   font-size: 2.3em;
+  text-align: center;
 }
 
-.formLogin p {
+.formCreate p {
+  text-align: center;
   display: inline-block;
   font-size: 14px;
   color: #666;
   margin-bottom: 25px;
 }
 
-.formLogin input {
+.formCreate input {
   padding: 15px;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -37,16 +35,16 @@
   outline: none;
 }
 
-.formLogin input:focus {
+.formCreate input:focus {
   border: 1px solid #f72585;
 }
 
-.formLogin label {
+.formCreate label {
   font-size: 14px;
   font-weight: 600;
 }
 
-.formLogin a {
+.formCreate a {
   display: inline-block;
   margin-bottom: 20px;
   font-size: 13px;
@@ -54,7 +52,7 @@
   transition: all linear 160ms;
 }
 
-.formLogin a:hover {
+.formCreate a:hover {
   color: #f72585;
 }
 
@@ -63,32 +61,34 @@
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-  border: none !important;
   transition: all linear 160ms;
   cursor: pointer;
-  margin: 0 !important;
 }
 
 .btn:hover {
   transform: scale(1.05);
   background-color: #ff0676;
 }
+@media (max-width: 500px) {
+  .formCreate {
+    padding: 10px;
+    gap: 5px;
+    width: 250px;
+  }
 
-.message {
-  margin-top: 10px;
-  text-align: center;
-  color: #007bff;
-  font-size: 14px;
-}
+  .formCreate h1 {
+    font-size: 1.6em;
+  }
 
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  .formCreate p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .formCreate input {
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
 }

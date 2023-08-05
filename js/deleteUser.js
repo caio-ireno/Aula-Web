@@ -1,12 +1,9 @@
-// delete.js
-
 const userList = document.getElementById("userList");
 
 // Função para buscar e exibir a lista de usuários
-async function getUsers() {
+async function deleteUserById() {
   try {
-    const response = await fetch("http://localhost:3000/users");
-    const users = await response.json();
+    users = await getUser();
 
     users.forEach((user) => {
       const listItem = document.createElement("div");
@@ -30,4 +27,4 @@ async function getUsers() {
 }
 
 // Chama a função para buscar e exibir os usuários ao carregar a página
-getUsers();
+deleteUserById();

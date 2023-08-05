@@ -1,8 +1,7 @@
-// api.js
 const BASE_URL = "http://localhost:3000";
 
 // Função para realizar uma requisição GET para a API
-async function getUsers() {
+async function getUser() {
   const response = await fetch(`${BASE_URL}/users`);
   const data = await response.json();
   return data;

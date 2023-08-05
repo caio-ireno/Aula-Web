@@ -3,17 +3,32 @@
     {
       "email": "caio_ireno@hotmail.com",
       "name": "caio",
+      "password": "caio",
       "id": 3
     },
     {
-      "email": "nath.oliveiranogueira@hotmail.com",
-      "name": "nathalia",
+      "email": "caio@gmail.com",
+      "name": "eduardo",
+      "password": "123",
       "id": 4
     },
     {
-      "email": "gustavo.henri@hotmail.com",
-      "name": "guga",
+      "email": "vini@gmail.com",
+      "name": "vinicius",
+      "password": "123",
       "id": 5
+    },
+    {
+      "email": "jose@gmail.com",
+      "name": "jose",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "email": "bruno@gmail.com",
+      "name": "bruno",
+      "password": "123",
+      "id": 7
     }
   ]
 }

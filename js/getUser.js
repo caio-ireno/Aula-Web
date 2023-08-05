@@ -1,11 +1,9 @@
 const userList = document.getElementById("userList");
 
 // Função para buscar e exibir a lista de usuários
-async function getUsers() {
+async function getAllUser() {
+  users = await getUser();
   try {
-    const response = await fetch("http://localhost:3000/users");
-    const users = await response.json();
-
     users.forEach((user) => {
       const listItem = document.createElement("div");
       listItem.classList.add("userItem");
@@ -20,6 +18,4 @@ async function getUsers() {
     console.error("Erro ao obter a lista de usuários:", error);
   }
 }
-
-// Chama a função para buscar e exibir os usuários ao carregar a página
-getUsers();
+getAllUser();

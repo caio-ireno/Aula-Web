@@ -2,10 +2,9 @@ const userList = document.getElementById("userList");
 const updateFormContainer = document.getElementById("updateFormContainer");
 
 // Função para buscar e exibir a lista de usuários
-async function getUsers() {
+async function UpdateUserById() {
   try {
-    const response = await fetch("http://localhost:3000/users");
-    const users = await response.json();
+    users = await getUser();
 
     users.forEach((user) => {
       const listItem = document.createElement("div");
@@ -16,9 +15,9 @@ async function getUsers() {
 
       const SendButton = document.createElement("button");
       SendButton.textContent = "Atualizar";
-      SendButton.classList.add("Enviar");
+      SendButton.classList.add("updateButton");
       SendButton.addEventListener("click", () =>
-        openUpdateForm(user.id, user.email, user.name)
+        openUpdateForm(user.id, user.email, user.name, user.password)
       );
 
       listItem.appendChild(userText);
@@ -30,7 +29,7 @@ async function getUsers() {
   }
 }
 
-async function openUpdateForm(userId, email, name) {
+async function openUpdateForm(userId, email, name, password) {
   const updateFormHTML = `
     <form id="updateForm" class="formUpdate">
       <h2>Atualizar Usuário</h2>
@@ -38,6 +37,8 @@ async function openUpdateForm(userId, email, name) {
       <input type="email" placeholder="Digite o novo e-mail" id="email" value="${email}" required>
       <label for="name">Nome</label>
       <input type="text" placeholder="Digite o novo nome" id="name" value="${name}" required>
+      <label for="password">Senha</label>
+      <input type="password" placeholder="Digite a nova senha" id="password" value="${password}" required>
       <button type="submit" class="btn">Atualizar</button>
     </form>
   `;
@@ -46,20 +47,22 @@ async function openUpdateForm(userId, email, name) {
 
   const updateForm = document.getElementById("updateForm");
 
-  updateForm.addEventListener("submit", (event) => {
+  updateForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const email = document.getElementById("email").value;
     const name = document.getElementById("name").value;
+    const password = document.getElementById("password").value;
 
     const newUser = {
       email,
       name,
+      password,
     };
 
-    updateUser(userId, newUser);
+    await updateUser(userId, newUser);
   });
 }
 
 // Chama a função para buscar e exibir os usuários ao carregar a página
-getUsers();
+UpdateUserById();
