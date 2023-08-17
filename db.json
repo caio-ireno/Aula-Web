@@ -1,34 +1,34 @@
 {
   "users": [
     {
-      "email": "caio_ireno@hotmail.com",
-      "name": "caio eduardo",
-      "password": "caio",
+      "email": "caio@gmail.com",
+      "name": "caio",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "email": "caio@gmail.com",
+      "name": "asd",
+      "password": "asd",
+      "id": 2
+    },
+    {
+      "email": "caio@gmail.com",
+      "name": "asd",
+      "password": "asd",
       "id": 3
     },
     {
       "email": "caio@gmail.com",
-      "name": "eduardo",
-      "password": "123",
+      "name": "asd",
+      "password": "asd",
       "id": 4
     },
     {
-      "email": "vini@gmail.com",
-      "name": "vinicius",
-      "password": "123",
+      "email": "caio@gmail.com",
+      "name": "asd",
+      "password": "asd",
       "id": 5
-    },
-    {
-      "email": "jose@gmail.com",
-      "name": "jose",
-      "password": "123",
-      "id": 6
-    },
-    {
-      "email": "bruno@gmail.com",
-      "name": "bruno",
-      "password": "123",
-      "id": 7
     }
   ]
 }
