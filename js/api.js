@@ -17,6 +17,7 @@ async function createUser(user) {
     body: JSON.stringify(user),
   });
   const data = await response.json();
+  alert(`Usuário ${data.name} criado com sucesso`);
   return data;
 }
 
@@ -30,7 +31,7 @@ async function updateUser(id, user) {
     body: JSON.stringify(user),
   });
   const data = await response.json();
-  console.log(data);
+  alert(`Usuário ${data.name} atualizado com sucesso`);
   return data;
 }
 

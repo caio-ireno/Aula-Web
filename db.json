@@ -3,32 +3,8 @@
     {
       "email": "caio@gmail.com",
       "name": "caio",
-      "password": "123",
+      "password": "asd",
       "id": 1
-    },
-    {
-      "email": "caio@gmail.com",
-      "name": "asd",
-      "password": "asd",
-      "id": 2
-    },
-    {
-      "email": "caio@gmail.com",
-      "name": "asd",
-      "password": "asd",
-      "id": 3
-    },
-    {
-      "email": "caio@gmail.com",
-      "name": "asd",
-      "password": "asd",
-      "id": 4
-    },
-    {
-      "email": "caio@gmail.com",
-      "name": "asd",
-      "password": "asd",
-      "id": 5
     }
   ]
 }
