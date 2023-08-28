@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "http://localhost:5000";
 
 // Função para realizar uma requisição GET para a API
 async function getUser() {

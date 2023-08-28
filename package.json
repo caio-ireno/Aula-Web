@@ -4,9 +4,12 @@
   "description": "",
   "main": "./js/api.js",
   "scripts": {
-    "serve": "json-server --watch db.json"
+    "serve": "json-server --watch db.json --port 5000"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.3"
+  }
 }
